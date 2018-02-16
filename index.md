@@ -18,6 +18,10 @@ Syntax highlighted code block
 - Bulleted
 - List
 
+- Frijole
+- is
+- The Man
+
 1. Numbered
 2. List
 
