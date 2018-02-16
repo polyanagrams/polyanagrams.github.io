@@ -4,6 +4,8 @@
 	<title>Play PolyAnagrams Web Game | PolyAnagrams</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="description" content="Play PolyAnagrams - the word game where no word is forever, not even forever. Play now - Free!" /> 
+
+	<!-- Facebook share tags -->
     <meta property="fb:app_id" content="268081800392685" />
 	<meta property="og:type" content="game" />
   	<meta property="og:url" content="http://www.radrazorgames.com/f-fb/poly-share-full.html" />
@@ -12,6 +14,8 @@
   	<meta property="og:description" content="Play PolyAnagrams! The word game that sharpens up your brain. Crossword gameplay in the tradition of SCRABBLE®. But re-imagined from the ground up!" />
   	<meta property="og:image" content="http://www.radrazorgames.com/games/polyanagrams_game_crossword_word_games_fun_s.png" />
   	<meta property="og:image:alt" content="Play PolyAnagrams Web Game | PolyAnagrams" />
+
+  	<!-- Web game -->
     <style>
 	.webgl-content * {border: 0; margin: 0; padding: 0}
 	.webgl-content {position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
@@ -20,7 +24,7 @@
 	.webgl-content .logo.Dark {background-image: url('TemplateData/polyanagrams-word-game-play-online.png');}
 	</style>
 	<link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Default WebGL.json", {onProgress: UnityProgress});
@@ -30,10 +34,11 @@
     	document.getElementById("loadLogo").style.display = "none";
 	}
 	</script>
+
   </head>
-  <body style="background-color: black">
+  <body style="background-color: white">
     <div class="webgl-content">
-      <div id="gameContainer" style="width: 800px; height: 600px; margin:0 auto;"></div>
+      <div id="gameContainer" style="width: 800px; height: 600px;"></div>
       <div id="loadLogo" class="logo Dark"></div>
     </div>
   </body>
