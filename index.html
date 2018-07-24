@@ -1,97 +1,80 @@
 <!DOCTYPE HTML>
 <!--
-	Poly Anagrams
+	PolyAnagrams
 	polyanagrams.com | hello@polyanagrams.com
 -->
 <html>
 	<head>
-		<title>Poly Anagrams - Word Game | Poly Anagrams</title>
+		<title>PolyAnagrams - Word Game | PolyAnagrams</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body>
-		<!-- Header -->
-			<header id="header">
-				<nav>
-					<ul>
-						<li><a href="#menu">Menu</a></li>
-					</ul>
-				</nav>
-			</header>
-
-		<!-- Menu -->
-			<nav id="menu">
-				<h2>Menu</h2>
-				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="poly-anagrams-word-game/play-poly-anagrams-word-game-online.html">Play Game</a></li>
-					<li><a href="rules.html">Rules</a></li>
-				</ul>
-				<ul class="actions vertical">
-					<li><a href="poly-anagrams-word-game-online.html" class="button fit special">Play Now</a></li>
+		<header id="header">
+			<nav>
+				<ul>
+					<li><a href="#menu">Menu</a></li>
 				</ul>
 			</nav>
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Intro -->
-					<section id="intro" class="wrapper featured style1">
-						<div class="inner">
-							<span class="image"><img src="images/poly-anagrams-word-game.png" alt="Poly Anagrams Word Game" /></span>
-							<div class="content">
-								<header>
-									<h1>Poly Anagrams</h1>
-									<p>The freewheeling word game where<br />
-									no word is forever, not even FOREVER.</p>
-								</header>
-								<footer>
-									<ul class="actions">
-										<li><form><input type="button" value="Enter Beta Password" onClick="p()"></form></li>
-										<script>
-										function p() {
-											var t = 1; var p = prompt('Please Enter Your Password',' ');
-											while (t < 3) {
-											if (!p)
-												history.go(-1);
-												if (p.toLowerCase() == "frijole") {
-													window.location.href = 'index-live.html';
-													break;
-											}
-											t+=1;
-											var p = prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
-										}
-										if (p.toLowerCase()!="password" & t ==3)
+		</header>
+		<nav id="menu">
+			<h2>Menu</h2>
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="polyanagrams-word-game/play-polyanagrams-word-game-online.html">Play Game</a></li>
+				<li><a href="rules.html">Rules</a></li>
+			</ul>
+			<ul class="actions vertical">
+				<li><a href="polyanagrams-word-game-online.html" class="button fit special">Play Now</a></li>
+			</ul>
+		</nav>
+		<div id="wrapper">
+				<section id="intro" class="wrapper featured style1">
+					<div class="inner">
+						<span class="image"><img src="images/polyanagrams-word-game.png" alt="PolyAnagrams Word Game" /></span>
+						<div class="content">
+							<header>
+								<h1>PolyAnagrams</h1>
+								<p>The freewheeling word game where<br />
+								no word is forever, not even FOREVER.</p>
+							</header>
+							<footer>
+								<ul class="actions">
+									<li><form><input type="button" value="Enter Beta Password" onClick="p()"></form></li>
+									<script>
+									function p() {
+										var t = 1; var p = prompt('Please Enter Your Password',' ');
+										while (t < 3) {
+										if (!p)
 											history.go(-1);
-											return " ";
+											if (p.toLowerCase() == "frijole") {
+												window.location.href = 'index-live.html';
+												break;
 										}
-										</script>
+										t+=1;
+										var p = prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+									}
+									if (p.toLowerCase()!="password" & t ==3)
+										history.go(-1);
+										return " ";
+									}
+									</script>
 
-									</ul>
-								</footer>
-							</div>
+								</ul>
+							</footer>
 						</div>
-					</section>
-
-				<!-- Footer -->
-					<section id="footer">
-						<div class="copyright">
-							<p>&copy; 2018 <a href="http://www.radrazorgames.com">Rad Razor, LLC.</a> All rights reserved.</p>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
+					</div>
+				</section>
+				<section id="footer">
+					<div class="copyright">
+						<p>Developed by <a href="http://www.radrazorgames.com">Rad Razor Games</a>. All rights reserved.</p>
+					</div>
+				</section>
+		</div>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>
